@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+  }
+  p,button,ul,li,span {
+    font-family: 'Almarai', sans-serif;
+  }
+} 
+.contact{
+  justify-content: flex-end;
+}
+
+.blob1{
+  @apply bg-dark-blue w-96 h-96 absolute top-10 -left-10 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+
+.blob3{
+  @apply bg-dark-blue w-96 h-96 absolute bottom-[-880px] -left-10 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+
+.blob2 {
+@apply bg-[#9AFFF3] w-1/4 h-96 absolute bottom-2 right-0 -z-10 blur-2xl opacity-60 overflow-hidden rounded-full;
+}
+
+.btn{
+  @apply bg-dark-blue text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue;
+}
+
+.container{
+  @apply pl-20 pr-20 items-center;
+}
+.container-s{
+  @apply pl-[0rem] m-auto items-center;
+}
+
+.sec{
+  @apply bg-light-blue pl-6 pr-6 pt-0.5 pb-0.5 text-sm font-bold rounded-lg text-white;
+}
+
+.h1{
+  @apply text-white md:leading-snug leading-relaxed text-4xl md:text-4xl font-bold mb-4;
+}
+
+.service{
+  @apply rounded-br-3xl rounded-tl-3xl sm:m-auto items-center  w-[300px] h-[350px] sm:w-[350px]  bg-blue hover:bg-dark-blue ease-in duration-300 ;
+}
